@@ -22,7 +22,7 @@ function Login({ handleLogin }) {
             required
             className="m-1 text-white outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400"
             type="email"
-            placeholder="enter your email"
+            placeholder="enter your ID/Email"
           />
           <input
             value={pass}

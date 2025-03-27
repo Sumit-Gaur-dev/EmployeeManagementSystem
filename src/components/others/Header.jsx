@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 
 
 function Header(){
     
+    const authData = useContext(AuthContext);
     const logOut = () =>{
         localStorage.setItem("loggedInUser","");
-        window.location.reload();
     }
 
     return(
