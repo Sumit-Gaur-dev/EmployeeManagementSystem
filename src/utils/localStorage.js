@@ -211,13 +211,16 @@ const admin = [
   },
 ];
 
+const loggedInUser = null;
+
 export const setLocalStorageData = () => {
   localStorage.setItem("employees", JSON.stringify(employees));
   localStorage.setItem("admin", JSON.stringify(admin));
+  localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 };
 export const getLocalStorageData = () => {
   const employees = JSON.parse(localStorage.getItem("employees"));
   const admin = JSON.parse(localStorage.getItem("admin"));
-
-  return { employees, admin };
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  return { employees, admin, loggedInUser };
 };

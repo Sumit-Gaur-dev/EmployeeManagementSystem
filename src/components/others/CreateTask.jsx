@@ -37,7 +37,16 @@ function CreateTask() {
         })
         localStorage.setItem("employees",JSON.stringify(authData));
         console.log("done");
-
+        
+        setNewTaskData({
+            active: true,
+            newTask: true,
+            completed: false,
+            failed: false,
+            taskTitle: "",
+            taskDescription: "",
+            taskDate: "",
+            category: ""});
     }
 
 

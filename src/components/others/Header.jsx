@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
-import { AuthContext } from "../../context/AuthProvider";
 
-
-function Header(){
+function Header(props){
     
-    const authData = useContext(AuthContext);
+
     const logOut = () =>{
         localStorage.setItem("loggedInUser","");
+        props.changeUser('');
     }
 
     return(
